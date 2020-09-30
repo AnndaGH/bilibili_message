@@ -12,9 +12,6 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-
 def dpapi_decrypt(encrypted):
     import ctypes
     import ctypes.wintypes
